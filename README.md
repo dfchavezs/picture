@@ -1,5 +1,27 @@
 # Picture Viewer
 
+## Setup
+
+Install all dependencies
+
+```
+npm i
+```
+
+Copy the `.env.sample` file to `.env`
+
+```
+cp .env.sample .env
+```
+
+And then, run this project
+
+```
+npm run dev
+```
+
+## About this project
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
