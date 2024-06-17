@@ -1,0 +1,52 @@
+{
+  "name": "picture-viewer",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "test": "vitest",
+    "test:check": "vitest --run",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint:fix": "eslint ./src --ext .jsx,.js,.ts,.tsx --quiet --fix --ignore-path ./.gitignore",
+    "lint:format": "prettier  --log-level warn --write \"./**/*.{js,jsx,ts,tsx,css,md,json}\" ",
+    "lint:check-prettier": "prettier  --log-level warn --check \"./**/*.{js,jsx,ts,tsx,css,md,json}\" ",
+    "lint:check-eslint": "eslint ./src --ext .jsx,.js,.ts,.tsx --max-warnings 0 --ignore-path ./.gitignore",
+    "lint": "npm run lint:format && npm run lint:fix "
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.45.1",
+    "axios": "^1.7.2",
+    "date-fns": "^3.6.0",
+    "primeicons": "^7.0.0",
+    "primereact": "^10.6.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-intl": "^6.6.8",
+    "react-router-dom": "^6.23.1",
+    "styled-components": "^6.1.11"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "@testing-library/dom": "^10.1.0",
+    "@testing-library/jest-dom": "^6.4.6",
+    "@testing-library/react": "^16.0.0",
+    "@testing-library/user-event": "^14.5.2",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@typescript-eslint/eslint-plugin": "^7.2.0",
+    "@typescript-eslint/parser": "^7.2.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "jsdom": "^24.1.0",
+    "prettier": "^3.3.2",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0",
+    "vitest": "^1.6.0"
+  }
+}
